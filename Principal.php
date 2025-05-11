@@ -20,3 +20,11 @@ $pedido2->entregarPedido("Hamburguesa");
 $pedido3 = new Pedido(new EntregaDomicilio());
 $pedido3->entregarPedido("Sushi");
 
+$chef = new Chef();
+  $mesero = new Mesero();
+  $cajero = new Cajero();
+  $chef->establecerSiguiente($mesero)->establecerSiguiente($cajero);
+  
+  $chef->manejar("preparar");
+  $chef->manejar("servir");
+  $chef->manejar("cobrar");
