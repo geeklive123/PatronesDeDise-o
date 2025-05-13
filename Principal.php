@@ -32,4 +32,3 @@ $chef->manejar("preparar");
 $chef->manejar("servir");    
 $chef->manejar("cobrar");  
 ?>
-z
